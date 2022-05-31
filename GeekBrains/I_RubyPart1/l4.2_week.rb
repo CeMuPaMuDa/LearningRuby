@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'lib/week'
 
 puts 'Вывод 2-мя вариантами:'
@@ -5,4 +7,4 @@ puts 'Вывод 2-мя вариантами:'
 puts WEEK_ARRAY
 puts '-------------------------------------'
 # Вариант 2
-WEEK_ARRAY.each{|w| puts w}
+WEEK_ARRAY.each { |w| puts w }

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 pi = Math::PI
 
 puts "Число ПИ #{pi}"
