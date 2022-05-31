@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/user'
+require_relative '../../lib/test_user'
 
 user = User.new
 
