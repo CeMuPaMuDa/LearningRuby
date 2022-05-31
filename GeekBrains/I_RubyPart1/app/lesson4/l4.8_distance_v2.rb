@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'ostruct'
 
 a = OpenStruct.new(x: 3, y: 7)

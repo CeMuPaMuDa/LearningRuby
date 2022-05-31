@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'lib/week'
+require_relative '../../lib/week'
 
 puts 'Вывод 2-мя вариантами:'
 # Вариант 1
