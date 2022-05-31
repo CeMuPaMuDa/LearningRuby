@@ -1,0 +1,18 @@
+# frozen_string_literal: true
+
+require 'rubygems'
+require 'bundler/setup'
+
+Bundler.require(:default)
+
+I18n.load_path << Dir["#{File.expand_path('config/locales')}/*.yml"]
+I18n.default_locale = :ru
+
+desc 'Задача по умолчанию'
+task default: 'date:today'
+namespace :date do
+  desc 'Вывод текущей даты'
+  task :today do
+    puts "Текущая дата: #{I18n.l(Time.now, format: :long)}"
+  end
+end
