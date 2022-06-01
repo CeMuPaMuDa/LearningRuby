@@ -12,3 +12,5 @@ Naming/PredicateName:
   Enabled: false
 Metrics/ParameterLists:
   Max: 6
+Style/ClassVars:
+  Enabled: false
