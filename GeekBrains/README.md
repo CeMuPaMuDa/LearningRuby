@@ -10,6 +10,7 @@
 #### Урок 4. Стандартные классы
 [Домашнее задание 4](https://github.com/CeMuPaMuDa/LearningRuby/pull/4)
 #### Урок 5. Переменные
+[Домашнее задание 5](https://github.com/CeMuPaMuDa/LearningRuby/pull/5)
 #### Урок 6. Константы
 #### Урок 7. Операторы
 #### Урок 8. Ветвление
