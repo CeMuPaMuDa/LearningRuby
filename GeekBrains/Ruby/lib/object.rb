@@ -16,6 +16,7 @@ class Object
 
   def to_number(num)
     raise 'Не передано ни одного значения!' unless num.numeric?
+
     num.to_f.to_i
   end
 
@@ -30,5 +31,14 @@ class Object
       "#{val} - строка"
     end
   end
-end
 
+  def posneg_val(val)
+    if val.numeric? && val.to_i.negative?
+      "'#{val}' - отрицательное число"
+    elsif val.numeric? && (val.to_i.positive? || val.to_i.zero?)
+      "'#{val}' - положительное число"
+    else
+      "'#{val}' - Это не число!!!"
+    end
+  end
+end

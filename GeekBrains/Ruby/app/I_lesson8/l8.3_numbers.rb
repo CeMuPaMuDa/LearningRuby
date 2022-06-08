@@ -11,9 +11,7 @@ if input.size < 3
     puts 'Введено недостаточно целых чисел'
     print 'Ведите еще число: '
     num = gets.chomp
-    if num.numeric? && !(num.include? '.') && !(num.include? 'e')
-        input << num 
-    end
+    input << num if num.numeric? && !(num.include? '.') && !(num.include? 'e')
     break if input.size >= 3
   end
 end
