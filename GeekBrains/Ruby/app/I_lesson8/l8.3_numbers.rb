@@ -3,7 +3,7 @@
 require_relative '../../lib/object'
 
 input = ARGV.select(&:numeric?)
-            .reject { |x| x.include? '.' }
+            .reject { |x| (x.include? '.') || (num.include? 'e') }
             .first(3)
 if input.size < 3
   ARGV.clear

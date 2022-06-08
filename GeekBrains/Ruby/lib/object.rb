@@ -16,7 +16,19 @@ class Object
 
   def to_number(num)
     raise 'Не передано ни одного значения!' unless num.numeric?
-
     num.to_f.to_i
   end
+
+  def check_val(val)
+    if val.numeric?
+      if (val.include? '.') || (val.include? 'e')
+        "#{val} - вещественное число"
+      else
+        "#{val} - целое число"
+      end
+    else
+      "#{val} - строка"
+    end
+  end
 end
+
