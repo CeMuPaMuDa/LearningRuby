@@ -51,4 +51,8 @@ class Object
       "'#{val}' - Это не число!!!"
     end
   end
+
+  def return_val(arr, val)
+    arr[val - 1] unless val.zero?
+  end
 end
