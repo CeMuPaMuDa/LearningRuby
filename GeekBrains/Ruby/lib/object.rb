@@ -22,7 +22,7 @@ class Object
 
   def check_val(val)
     if val.numeric?
-      if (val.include? '.') || (val.include? 'e')
+      if (val.to_s.include? '.') || (val.to_s.include? 'e')
         "#{val} - вещественное число"
       else
         "#{val} - целое число"
@@ -37,6 +37,16 @@ class Object
       "'#{val}' - отрицательное число"
     elsif val.numeric? && (val.to_i.positive? || val.to_i.zero?)
       "'#{val}' - положительное число"
+    else
+      "'#{val}' - Это не число!!!"
+    end
+  end
+
+  def evenodd_val(val)
+    if val.numeric? && val.to_i.even?
+      "'#{val}' - четное число"
+    elsif val.numeric? && val.to_i.odd?
+      "'#{val}' - нечетное число"
     else
       "'#{val}' - Это не число!!!"
     end
