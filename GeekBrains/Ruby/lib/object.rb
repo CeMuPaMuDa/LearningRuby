@@ -10,15 +10,12 @@ class Object
   def to_number_arr(arr)
     raise 'Не передано ни одного значения!' if arr.empty?
 
-    arr.map! do |el|
-      el.numeric? ? el.to_i : el.size
-    end
-    arr
+    num_arr = arr.select(&:numeric?)
+    num_arr.map(&:to_i)
   end
 
   def to_number(num)
-    raise 'Не передано ни одного значения!' if num == ''
-
-    num.numeric? ? num.to_i : num.size
+    raise 'Не передано ни одного значения!' unless num.numeric?
+    num.to_i
   end
 end

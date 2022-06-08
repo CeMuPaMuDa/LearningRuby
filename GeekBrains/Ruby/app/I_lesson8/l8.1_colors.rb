@@ -4,6 +4,7 @@ require_relative '../../lib/rainbow_class'
 num = ARGV.first.to_i
 
 if num.zero?
+  ARGV.clear
   print 'Для определения цвета введите число от 1 до 7: '
   num = gets.to_i
 end

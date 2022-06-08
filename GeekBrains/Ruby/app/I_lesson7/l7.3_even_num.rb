@@ -8,7 +8,7 @@ num = gets.chomp
 num = to_number(num)
 
 if (num & 1).zero?
-  puts "Введено четное число: #{num}"
+  puts "Введено четное число: '#{num}'"
 else
   puts "Введено нечетное число: '#{num}'"
 end
