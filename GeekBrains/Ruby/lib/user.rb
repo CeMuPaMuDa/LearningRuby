@@ -3,6 +3,7 @@
 class User
   attr_reader :name, :surname, :patronymic
 
+  @@list = []
   @@counter = 0
 
   def initialize(name:, surname:, patronymic:)
@@ -10,6 +11,11 @@ class User
     @surname = surname
     @patronymic = patronymic
     @@counter += 1
+    @@list << self
+  end
+
+  def self.list
+    @@list
   end
 
   def self.counter
