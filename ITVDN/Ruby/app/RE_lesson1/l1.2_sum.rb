@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 print 'Enter the first number: '
 fst = gets.to_i
 print 'Enter the second number: '
